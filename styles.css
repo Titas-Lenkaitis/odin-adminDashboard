@@ -6,7 +6,7 @@
 body {
   display: grid;
   grid-template-columns: 290px 1fr;
-  grid-template-rows: 175px 1fr;
+  grid-template-rows: 200px 1fr;
   min-height: 100vh;
   font-family: arial;
 }
@@ -42,7 +42,6 @@ body {
 .sideBar > div {
   display: flex;
   flex-direction: column;
-  gap: 8px;
 }
 
 
@@ -51,7 +50,7 @@ body {
   align-items: center;
   gap: 16px;
   font-size: 18px;
-  padding: 6px 24px;
+  padding: 9px 24px;
   transition: 0.085s;
 }
 
