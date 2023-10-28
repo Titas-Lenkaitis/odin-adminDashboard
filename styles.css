@@ -9,6 +9,7 @@ body {
   grid-template-rows: 200px 1fr;
   min-height: 100vh;
   font-family: arial;
+  max-width: 100vw;
 }
 
 .sideBar {
@@ -75,7 +76,7 @@ body {
   grid-column: 2 / 3;
   grid-row: 1 / 2;
   display: grid;
-  grid-template-columns: 5fr minmax(350px, 2.25fr);
+  grid-template-columns: 5fr minmax(450px, 2.25fr);
   grid-template-rows: 1fr 1fr;
   padding: 0px 24px;
 }
@@ -189,6 +190,106 @@ body {
 
 .mainContent {
   background-color: #e2e8f0;
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  font-size: 14px;
+  padding: 32px 18px;
+  gap: 32px;
+}
+
+.projects {
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.cards {
+  display: grid;
+  height: 100%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 12px;
+  border-left: 12px solid #f0b429;
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card h1 {
+  font-size: 22px;
+}
+
+.card p {
+  color: #636363;
+  font-size: 16px;
+}
+
+.card svg {
+  height: 35px;
+  width: 35px;
+  border-radius: 12px;
+  padding: 2.5px;
+  transition: 0.1s;
+}
+
+.card svg:hover {
+  background-color: #d3d8df;
+  transition: 0.1s;
+}
+
+.card svg:active {
+  background-color: #636363;
+  transition: 0.05s;
+}
+
+.svgs {
+  display: flex;
+  gap: 18px;
+  align-self: flex-end;
+  margin-top: auto;
+}
+
+.announcements {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.announcementBox {
+  background-color: white;
+  padding: 32px 28px;
+  border-radius: 18px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.announcement {
+  padding: 18px 0px;
+}
+
+.announcement p {
+  color: #636363;
+}
+
+.announcement2 {
+  border-top: 1px solid #b2bac4;
+  border-bottom: 1px solid #b2bac4;
+}
+
+.trending  {
   grid-column: 2 / 3;
   grid-row: 2 / 3;
 }
